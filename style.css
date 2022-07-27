@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+
+ 
+}
+.mide{
+    border-radius:90% ;
+}
+nav{
+    background-color: rgb(201, 5, 201);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+    position:fixed;
+    width: 100%;
+
+}
+.navbar ul{
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none !important;
+    color: white;
+    font-size: 18px;
+    padding: 15px 10px;
+    transition: 0.5s;
+}
+.navbar ul li a:hover{
+    background-color: black;
+    color: white;
+}
+img{
+    width: 70px;
+    height: 70px;
+    background-color:;
+    margin: 2px;
+    background-color: rgb(201, 5, 201);
+}
+body{
+    background: url(IMG-20220607-WA0108.jpg);
+    background-size:100% ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.side1{
+    padding-top: 15%;
+    justify-content: center;
+    text-align: center;
+    font-size:30px ;
+
+
+}
+h1{
+    font-size: 80px;
+     text-shadow: 0.5px 0.5px red;
+}
+.side1 a{
+    background-color: rgb(3, 3, 29);
+    color: white;
+    text-decoration: none;
+}
+#content{
+    animation-name: fadeIn; 
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: calc(1);
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    50{
+        opacity: 0.5;
+        transform: translatey(0)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+}
